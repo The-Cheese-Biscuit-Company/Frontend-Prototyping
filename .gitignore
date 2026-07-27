@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+
+# Compiled CSS output (generated via Tailwind CLI watcher)
+style.css
+
+# Logs & Environment
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
