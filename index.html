@@ -1,12 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/zero-md@3?register"
+    ></script>
+    <script src="src/main.js" defer></script>
+  </head>
+  <body class="h-full flex flex-col m-0 font-sans">
+
+    <header class="h-16 border-b p-4 flex items-center justify-between shrink-0">
+      <h1 class="text-lg font-bold">Notes proto</h1>
+      <div class="flex items-center gap-2">
+        <label for="fileSelect" class="text-sm font-semibold">Select File:</label>
+        <select id="fileSelect" class="p-1 border rounded">
+          <option value="README.md" selected>README.md</option>
+          <option value="intro.md">intro.md</option>
+          <option value="guide.md">guide.md</option>
+        </select>
+      </div>
+    </header>
+
+
+    <main class="flex-1 flex overflow-hidden">
+     
+      <aside class="w-64 border-r p-4 overflow-y-auto shrink-0">
+        <h2 class="text-sm font-bold uppercase mb-2">Table of Contents</h2>
+        <nav id="sidebarNav" class="flex flex-col gap-1">
+         
+        </nav>
+      </aside>
+
+      <section class="flex-1 p-6 overflow-y-auto">
+        <zero-md id="mdViewer" src="README.md" class="block">
+          <template data-append>
+            <link rel="stylesheet" href="style.css" />
+          </template>
+        </zero-md>
+      </section>
+    </main>
+  </body>
 </html>
+
+
