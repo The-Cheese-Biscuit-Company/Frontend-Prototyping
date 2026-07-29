@@ -1,8 +1,6 @@
 # Dependency directories
 node_modules/
 
-# Compiled CSS output (generated via Tailwind CLI watcher)
-style.css
 
 # Logs & Environment
 npm-debug.log*
