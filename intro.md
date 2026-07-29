@@ -1,21 +1,22 @@
-# Getting Started with Mirai Frontend
+# Getting Started
 
-Welcome to the **Mirai Frontend Prototype documentation**! This page provides a quick overview of how the application is structured and how to get up and running smoothly.
-
----
-
-## Key Highlights
-
-- **Dynamic Markdown Rendering**: Powered by `<zero-md>` for native Shadow DOM encapsulation.
-- **Tailwind CSS v4 Styling**: Custom modern UI compiled clean from `src/main.css`.
-- **Instant Document Switching**: Select any document from the top navigation dropdown to load content on-the-fly.
+Welcome to the documentation prototype. This project demonstrates loading and navigating Markdown files using zero-md and Tailwind CSS.
 
 ---
 
-## Quick Navigation
+## Key Features
 
-Use the dropdown menu in the top bar to switch between:
-1. `README.md` – Tailwind CLI & setup guide
-2. `intro.md` – Project introduction and system overview
-3. `guide.md` – Developer guide and component reference
+- **Markdown Rendering**: Rendered via `<zero-md>` using Shadow DOM.
+- **Tailwind CSS Styling**: CSS generated from `src/main.css`.
+- **Document Switching**: Select documents from the top navigation dropdown.
+
+---
+
+## Navigation
+
+Use the dropdown menu at the top of the page to choose between:
+1. `README.md` – Setup guide
+2. `intro.md` – Overview
+3. `guide.md` – Component reference
+
 

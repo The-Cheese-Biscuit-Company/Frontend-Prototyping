@@ -1,14 +1,14 @@
-# Developer Guide & Component Reference
+# Developer Guide
 
-This guide covers developer details on using `<zero-md>` with custom external stylesheets in a modern responsive layout.
+This document describes how `<zero-md>` is integrated with external stylesheets and compiled Tailwind CSS.
 
 ---
 
-## How zero-md Integration Works
+## Zero-MD Integration
 
-`<zero-md>` is a web component that loads Markdown files and renders them inside a Shadow DOM container.
+`<zero-md>` loads Markdown files and renders them inside a Shadow DOM container.
 
-### Template Injecting style.css
+### Template Configuration
 
 ```html
 <zero-md id="mdViewer" src="README.md">
@@ -18,7 +18,7 @@ This guide covers developer details on using `<zero-md>` with custom external st
 </zero-md>
 ```
 
-When switching options, JavaScript updates the `src` attribute:
+Updating the `src` attribute loads the new file:
 
 ```javascript
 const viewer = document.getElementById('mdViewer');
@@ -27,12 +27,13 @@ viewer.setAttribute('src', 'guide.md');
 
 ---
 
-## Styling via Tailwind CSS
+## Styling Workflow
 
-> **Important Reminder**: Always edit `src/main.css` and run the Tailwind CLI compiler. Do not edit `style.css` directly!
+Edit `src/main.css` to add custom CSS rules or theme configurations, then run the Tailwind compiler.
 
 ### Build Command:
 ```bash
 npx @tailwindcss/cli -i ./src/main.css -o ./style.css
 ```
+
 
